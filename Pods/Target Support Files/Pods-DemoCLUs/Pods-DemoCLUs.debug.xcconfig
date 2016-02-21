@@ -1,0 +1,11 @@
+CLANG_CXX_LANGUAGE_STANDARD = c++0x
+CLANG_CXX_LIBRARY = libc++
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+GCC_C_LANGUAGE_STANDARD = c11
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = -D__ASSERT_MACROS_DEFINE_VERSIONS_WITHOUT_UNDERSCORES=0 $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/GeoFeatures.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/LoginWithClimate.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -l"c++" -framework "GeoFeatures" -framework "LoginWithClimate"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-DemoCLUs
+PODS_ROOT = ${SRCROOT}/Pods

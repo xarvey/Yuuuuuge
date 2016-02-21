@@ -1,0 +1,1 @@
+../../../../GeoFeatures/GeoFeatures/Internal/GFRing+Protected.hpp

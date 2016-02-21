@@ -1,0 +1,6 @@
+framework module Pods_DemoCLUs {
+  umbrella header "Pods-DemoCLUs-umbrella.h"
+
+  export *
+  module * { export * }
+}

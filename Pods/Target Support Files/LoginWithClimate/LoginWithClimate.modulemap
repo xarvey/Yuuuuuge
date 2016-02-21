@@ -1,0 +1,6 @@
+framework module LoginWithClimate {
+  umbrella header "LoginWithClimate-umbrella.h"
+
+  export *
+  module * { export * }
+}

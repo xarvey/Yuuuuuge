@@ -1,0 +1,1 @@
+../../../../GeoFeatures/GeoFeatures/Internal/GFPolygon+Protected.hpp

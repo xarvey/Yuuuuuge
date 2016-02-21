@@ -1,0 +1,29 @@
+{
+  "name": "LoginWithClimate",
+  "version": "0.1.1",
+  "summary": "An OpenID connect implementation for integrating climate.com logins into third-party apps.",
+  "description": "An OpenID connect implementation for integrating climate.com logins into third-party apps.\nExports a \"Login with Climate\" button.",
+  "homepage": "https://github.com/TheClimateCorporation/LoginWithClimate",
+  "license": "Apache 2.0",
+  "authors": {
+    "Tommy Rogers": "tommy.rogers@climate.com"
+  },
+  "source": {
+    "git": "https://github.com/TheClimateCorporation/LoginWithClimate.git",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "LoginWithClimate": [
+      "Pod/Assets/*.png",
+      "Pod/Resources/*"
+    ]
+  },
+  "resources": [
+    "Pod/Resources/Media.xcassets"
+  ]
+}

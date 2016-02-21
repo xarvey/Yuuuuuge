@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WEL-4z-wkt">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Climate Web View Controller-->
+        <scene sceneID="2z5-Av-nyu">
+            <objects>
+                <viewController id="EMs-ep-dJk" customClass="ClimateWebViewController" customModule="LoginWithClimate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zfw-3f-a2I"/>
+                        <viewControllerLayoutGuide type="bottom" id="vnh-fi-AE3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iGO-KO-6Hb">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mct-Wg-IPV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mct-Wg-IPV" firstAttribute="leading" secondItem="iGO-KO-6Hb" secondAttribute="leading" id="1QN-E7-OzX"/>
+                            <constraint firstItem="mct-Wg-IPV" firstAttribute="top" secondItem="zfw-3f-a2I" secondAttribute="bottom" id="Lhe-K8-iAG"/>
+                            <constraint firstAttribute="trailing" secondItem="mct-Wg-IPV" secondAttribute="trailing" id="TDm-8E-ZTT"/>
+                            <constraint firstItem="vnh-fi-AE3" firstAttribute="top" secondItem="mct-Wg-IPV" secondAttribute="bottom" id="dmy-Rt-ZOl"/>
+                            <constraint firstItem="mct-Wg-IPV" firstAttribute="top" secondItem="zfw-3f-a2I" secondAttribute="bottom" id="qIg-gI-GWc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Lhe-K8-iAG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="iVX-3Q-CVF">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="A18-x2-UMz">
+                            <connections>
+                                <action selector="cancel:" destination="EMs-ep-dJk" id="MYI-XP-VBk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="mct-Wg-IPV" id="26N-Vu-EtO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Vr-Fb-RGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="601"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dh7-G1-N9V">
+            <objects>
+                <navigationController id="WEL-4z-wkt" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sEb-nd-7IX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EMs-ep-dJk" kind="relationship" relationship="rootViewController" id="txM-bt-Leh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0dn-YM-GEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-106" y="601"/>
+        </scene>
+    </scenes>
+</document>
